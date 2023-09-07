@@ -33,7 +33,7 @@ function cargarProductosAlMayor(){
         <img class="img" src="${producto.imagen}">
         <div class="precio-btn">
         <span>USD ${producto.precio}</span>
-        <button onclick="agregarAlCarrito('${producto.titulo}', '${producto.imagen}', '${producto.categoria}', ${producto.precio})">Agregar al Carrito</button>
+        <button onclick="ordenar('${producto.titulo}', '${producto.categoria}', ${producto.precio})">Hacer Orden</button>
         </div>
         `;
         divProductosAlMayor.append(divProducto);
